@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="js/vue.js"></script>
+    <title>Renderizando html con Vue</title>
+  </head>
+  <body>
+    <div id="app">
+      <div v-html="content_html"></div>
+      <!--NO VALDRÍA con poner {{content_html}}. Tenemos que crearle un div propio. Ya lo hicimos antes con los if else, los bucles también iban en un <li></li>, etc-->
+      <img v-bind:src="src" :alt="alt">
+      <!--Para que vue entienda que esto es una propiedad, tenemos que colocar dos puntos delante-->
+      <!--También podríamos poner v-bind:src -->
+
+    </div>
+    <script src="js/app_rendering_html.js"></script>
+  </body>
+</html>

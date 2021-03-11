@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="js/vue.js"></script>
+    <title>Event handlers</title>
+  </head>
+  <body>
+    <div id="app">
+      <button @click="incrementar">Incrementar tamaño texto</button>
+      <button @click="decrementar">Decrementar tamaño texto</button>
+      <h1 :style="{color:'rebeccapurple', fontSize: numero+'px'}">Documentación oficial: Eventos en Vue. https://vuejs.org/v2/guide/events.html</h1>
+    </div>
+    <script src="js/app_event_handlers.js"></script>
+  </body>
+</html>
