@@ -16,7 +16,11 @@
   <body>
     <div id="app">
       <h1 :class="{ error: property_error, no_error: !property_error }">Texto de ejemplo</h1>
-      <!-- If error: property_error       else: no-error: !property-error -->
+      <!-- If property_error es true, la clase será error       else if !property-error (property error es false), la clase será no_error -->
+      <h1 v-if="property_error">Texto de ejemplo con v-if</h1>
+      <!-- No renderiza el elemento si el valor de la clase es false -->
+      <h1 v-show="property_error">Texto de ejemplo con v-show</h1>
+      <!-- Oculta el elemento con css si el valor de la clase es false (añade un display:none)-->
     </div>
     <script src="js/app_v_bind_class.js"></script>
   </body>
