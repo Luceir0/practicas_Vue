@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="js/vue.js"></script>
+    <title>V-bind class</title>
+    <style media="screen">
+      .error{
+        color: red;
+      }
+
+      .no_error{
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <h1 :class="{ error: property_error, no_error: !property_error }">Texto de ejemplo</h1>
+      <!-- If error: property_error       else: no-error: !property-error -->
+    </div>
+    <script src="js/app_v_bind_class.js"></script>
+  </body>
+</html>
